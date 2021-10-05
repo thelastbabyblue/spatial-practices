@@ -1,0 +1,14 @@
+.spaced {
+    line-height: 1.5em;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.bold {
+    font-weight: 700;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+/* always check out adobe fonts and color claim when working in css  */
