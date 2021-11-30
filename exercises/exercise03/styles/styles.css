@@ -1,3 +1,19 @@
+/* @import url('https://fonts.googleapis.com/css?family=Roboto'); */
+
+@font-face {
+    font-family: 'cantiquenormal';
+    src: url('../../fonts/cantique-normal-webfont.woff2') format('woff2'),
+         url('../../cantique-normal-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+body {
+    font-family: 'Cantique', serif;
+}
+
 .spaced {
     line-height: 1.5em;
 }
@@ -9,6 +25,30 @@
 .bold {
     font-weight: 700;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.container{
+    background-color: seashell;
+    font-family:cantique; 
+}
+
+h2 {
+
+}
+
+h1 {
+
+}
+p{
+    font-family:garamond;
+}
+
+.en-text{
+color:#081866;
+}
+
+.pt-text{
+color:dodgerblue;
 }
 
 /* always check out adobe fonts and color claim when working in css  */
