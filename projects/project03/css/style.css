@@ -1,3 +1,44 @@
+
+
+/* button colors */
+
+#gridButton {
+background: gray}
+
+#whiteButton {
+ background: white;
+}
+
+#blueButton {
+ background: white;
+}
+
+#blackButton {
+ background: black;
+}
+
+/* background colors */
+
+/* .grid-theme {
+ background-size: 30px 30px;
+ background-image: radial-gradient(circle, #000000 1px, rgba(0, 0, 0, 0) 1px);} */
+
+
+.white-theme {
+ background-color: white;
+}
+
+.black-theme {
+ background-color: black;
+}
+
+.blue-theme {
+ background-color: blue;}
+ /*   change text to white */
+ /* color: white;
+} */
+
+
 .container{
  background-color: blue;
  font-family:cantique; 
@@ -7,17 +48,45 @@
  text-decoration: none;
 }
 
+
+
 .grid{
- background-size: 40px 40px;
- background-image:
-  linear-gradient(to right, grey 1px, transparent .5px),
-  linear-gradient(to bottom, grey 1px, transparent .5px);}
+ background-color:;
+ background-size: 20px 20px;
+ background-image: radial-gradient(circle, #000000 1px, rgba(0, 0, 0, 0) 1px);}
 
+.button{
+ border-radius: 20%;
+ flex:left;
+}
+/* 
+nav {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-content: stretch;
+  align-items: flex-start;
+  justify-content: space-evenly;
 
+} */
+
+#switcher {
+ list-style: none;
+ margin: 0;
+ padding: 0;
+ overflow: hidden;
+}
+#switcher li {
+ float: right;
+ width: 20px;
+ height:20px;
+ margin: 0 15px 15px 0;
+ border: 1px solid black;
+}
 
 .image{
  display:grid;
-      grid-template-columns:1fr 2fr 1fr;
+      grid-template-columns:1fr 2fr 1fr 2fr 1fr;
       grid-auto-rows:minmax(100px, auto);
       grid-gap:2em;
       grid-row-gap:-2em;
