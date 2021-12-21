@@ -45,7 +45,7 @@
       // 2 -- Add an event listener to each circle
       blackCircle.addEventListener("click", turnBlack);
       blueCircle.addEventListener("click", turnWhite);
-      whiteCircle.addEventListener("click", turnWhite);
+      // whiteCircle.addEventListener("click", turnWhite);
       gridCircle.addEventListener("click", turnGrid);
 
       // 3 -- Write an event handler to change the color of the page when each circle is pressed.
@@ -108,12 +108,11 @@
             randomImage[number] +
             '" style="width:150px"  /> </div></div>';
 
-          // if (randomImage[number]) return randomImage[9];
-
-          // document.getElementById("result").innerHTML +=
-          //   '<div id="set"><div class="ui-widget-content"> <img src="' +
-          //   randomImage[9] +
-          //   '" style="height:150px"  /> </div></div>';
+          if (randomImage[number] == randomImage[9]) return;
+          document.getElementById("result").innerHTML +=
+            '<div id="set"><div class="ui-widget-content"> <img src="' +
+            randomImage[9] +
+            '" style="height:150px"  /> </div></div>';
         }
       }
 

@@ -1,0 +1,85 @@
+/* @import url('https://fonts.googleapis.com/css?family=Roboto'); */
+
+@font-face {
+ font-family: 'cantiquenormal';
+ src: url('../../fonts/cantique-normal-webfont.woff2') format('woff2'),
+      url('../../cantique-normal-webfont.woff') format('woff');
+ font-weight: normal;
+ font-style: normal;
+
+}
+
+
+body {
+ font-family: 'Cantique', serif;
+}
+
+.spaced {
+ line-height: 1.5em;
+}
+
+.capitalize {
+ text-transform: capitalize;
+}
+
+.bold {
+ font-weight: 700;
+ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.invisible-scrollbar::-webkit-scrollbar {
+ display: none;
+}
+
+.container{
+ background-color: seashell;
+ display:flex;
+height:100%;
+ font-family: cantique; 
+ margin: 10px;
+ padding: 10px;
+
+}
+
+.column {
+ overflow:scroll;
+ padding: 15px;
+ display: flex;
+ flex-direction: column;
+}
+
+.english{
+ color:blue;
+ background-color: salmon;
+ width: 50%;
+}
+
+.porto{
+ color: lightblue;
+ background-color:lightsalmon;
+ width: 50%;
+
+}
+.date{
+ background:tomato;
+ color: skyblue;
+ text-align: end;
+ 
+}
+
+h1 {
+ text-align: center;
+ text-decoration: seashell wavy underline;
+}
+
+h3 {
+text-align: center;
+}
+
+/* scroll bar styling? */
+
+::-webkit-scrollbar {
+    width: 0;
+  }
+
+/* always check out adobe fonts and color claim when working in css  */

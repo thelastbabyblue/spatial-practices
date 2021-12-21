@@ -27,28 +27,40 @@ body {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
+.date{
+    background:tomato;
+    color: skyblue;
+    text-align: end;
+}
+
 .container{
     background-color: seashell;
+
     font-family:cantique; 
+    margin: 10px;
+    padding: 10px;
+
 }
 
-h2 {
-
+.english{
+    color:blue;
+    background-color: salmon;
 }
 
+.porto{
+    color: lightblue;
+    background-color:lightsalmon;
+
+}
 h1 {
-
-}
-p{
-    font-family:garamond;
+    text-align: center;
+    text-decoration: seashell wavy underline;
 }
 
-.en-text{
-color:#081866;
+h3 {
+text-align: center;
 }
 
-.pt-text{
-color:dodgerblue;
-}
+
 
 /* always check out adobe fonts and color claim when working in css  */

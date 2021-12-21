@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Garamond');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  background-color: lightblue;
+}
+
+nav {
+  background-color:lightskyblue;
+  height: 25px; 
+}
+
+/*container*/
+ul.container {
+   display: flex;
+   height: 100%;
+   justify-content: space-around;
+   align-items: center;
+   list-style: none;
+}
+
+/*items*/
+li {
+  text-align: center;
+  padding: 0 30px;
+}
+
+a {
+  text-decoration: steelblue;
+  color:cornflowerblue;
+  text-transform: lowercase;
+  font-family: garamond;
+}
+
+/*animation*/
+a:hover {
+    animation: changeMe 3s ease-in-out .2s;
+  }
+
+@keyframes changeMe {
+0% {
+    color: darkblue;
+}
+33% {
+    color: rgb(82, 109, 168);
+    background-color:darkblue;
+    padding: 50 px;
+}
+66% {
+    color: rgb(97, 114, 150);
+}
+100% {
+    color: cornflowerblue;
+}
+}
