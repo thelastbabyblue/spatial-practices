@@ -5,15 +5,15 @@
 #gridButton {
 background: gray}
 
-#whiteButton {
+#whiteButton, .tooltip {
  background: white;
 }
 
-#blueButton {
+#blueButton, .tooltip {
  background: white;
 }
 
-#blackButton {
+#blackButton, .tooltip {
  background: black;
 }
 
@@ -54,8 +54,13 @@ background: gray}
  background-size: 20px 20px;
  background-image: radial-gradient(circle, #000000 1px, rgba(0, 0, 0, 0) 1px);}
 
-.button{
- border-radius: 20%;
+#button{
+ border-radius: 6px;
+ width: 100px;
+ height:100px;
+ margin: 0 100px 100px 0;
+ background: white;
+ color:black;
  flex:left;
 }
 /* 
@@ -70,18 +75,34 @@ nav {
 } */
 
 #switcher {
- list-style: none;
+ list-style:none ;
  margin: 0;
  padding: 0;
  overflow: hidden;
 }
 #switcher li {
- float: right;
- width: 20px;
- height:20px;
- margin: 0 15px 15px 0;
+
+ width: 50px;
+ height:50px;
+ margin: 20px 100px 100px 0;
  border: 1px solid black;
+ flex-direction: column;
 }
+
+.nav {
+  display:inline-flex;
+  flex-direction: row;
+  /* align-items: center; */
+}
+
+#box 
+{ border-radius: 6px;
+  width: 100px;
+  height: 100px;
+  margin: 0 100px 100px 0;
+  background: white;
+  color:black;
+  flex:left;}
 
 .image{
  display:grid;
@@ -91,6 +112,7 @@ nav {
       grid-row-gap:-2em;
       justify-items:center;
       align-items:center;
+      padding: 0.5em; 
 }
 
 a:link {
@@ -100,6 +122,37 @@ a:link {
 
 a:hover {
  color: pink;
+}
+
+
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+ width: 200px;
+ background-color:pink;
+ color:#fff;
+ text-align:center;
+ border-radius: 6px;
+ padding: 5px 0;
+ opacity: 0;
+ transition: opacity 1s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  top: -20px;
+  right:105%;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+ 
+}
+  
+  /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+ 
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
 }
 
 #draggable 
@@ -131,10 +184,20 @@ a:hover
 
 } */
 
+/* resizeable elements  */
+#resizable { width: 150px; height: 150px; padding: 0.5em; }
+  #resizable h3 { text-align: center; margin: 0; }
+
 .center {
  display: flex;
  justify-content: center;
  align-items: center;
  height: 100px;
+}
+
+.cutout {
+  height: 100px;
+  width: 100px;
+  margin: 10px;
 }
 
