@@ -145,7 +145,7 @@ a:hover {
   top: -20px;
   right:105%;
   border-style: solid;
-  border-color: transparent transparent black transparent;
+  /* border-color: transparent transparent black transparent; */
  
 }
   
@@ -201,5 +201,7 @@ a:hover
   height: 100px;
   width: 100px;
   margin: 10px;
+  border: none !important;
+      background: transparent !important;
 }
 
